@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply ease-in-out duration-150;
+}
+
+body:is(.dark) {
+    background: #1a1a1a;
+}
