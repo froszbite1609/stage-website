@@ -14,37 +14,57 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-    <header class="bg-white dark:bg-[#1A1A1A] w-full fixed top-0 left-0">
-        <section class="w-4/5 mx-auto">
+    <header
+        class="bg-background-light dark:bg-background-dark w-full fixed top-0 left-0 border-b border-divider-light-light dark:border-divider-light-dark h-[56px]"
+    >
+        <section class="w-4/5 h-full mx-auto grid grid-cols-12 items-center">
             <!-- Branding -->
-            <section>
-                <h1>Stage</h1>
+            <section class="col-span-6">
+                <h1 class="text-waikawa-950 dark:text-waikawa-50 font-bold">Stage</h1>
             </section>
 
             <!-- Menu -->
-            <section>
-                <li>
-                    <RouterLink to="/">Home</RouterLink>
+            <section class="flex col-span-6 justify-end">
+                <li class="list-none">
+                    <RouterLink to="/" class="text-waikawa-950 dark:text-waikawa-50 text-xs"
+                        >Home</RouterLink
+                    >
                 </li>
-                <li>
-                    <RouterLink to="/notifications">Notifications</RouterLink>
+                <li class="list-none ml-3">
+                    <RouterLink
+                        to="/notifications"
+                        class="text-waikawa-950 dark:text-waikawa-50 text-xs"
+                        >Notifications</RouterLink
+                    >
                 </li>
-                <li>
+
+                <!-- Vertical line -->
+                <i class="h-6 w-px ml-3 bg-divider-light-light dark:bg-divider-light-dark"></i>
+
+                <!-- Toggle menu -->
+                <li class="list-none ml-3">
                     <section
-                        class="relative w-[40px] h-[22px] bg-[#F1F1F1] dark:bg-[#2F2F2F] border rounded-[11px] border-[#3C3C3C1F] dark:border-[#5454547A] cursor-pointer"
+                        class="relative w-[40px] h-[22px] bg-background-mute-light dark:bg-background-mute-dark border rounded-[11px] border-divider-light-light dark:border-divider-light-dark cursor-pointer"
                         @click="toggleDark()"
                     >
                         <section
                             class="absolute bg-white dark:bg-black w-[18px] h-[18px] rounded-full top-px start-px dark:translate-x-full flex items-center justify-center"
                         >
                             <span class="dark:hidden">
-                                <i class="pi pi-sun text-xs text-[#3C3C3CB3]"></i>
+                                <i class="pi pi-sun text-xs text-waikawa-900"></i>
                             </span>
                             <span class="hidden dark:inline-block">
-                                <i class="pi pi-moon text-xs text-[#FFFFFFDE]"></i>
+                                <i class="pi pi-moon text-xs text-waikawa-100"></i>
                             </span>
                         </section>
                     </section>
+                </li>
+
+                <!-- User button -->
+                <li class="list-none ml-3">
+                    <RouterLink to="/profile">
+                        <i class="pi pi-user text-lg text-waikawa-950 dark:text-waikawa-50"></i>
+                    </RouterLink>
                 </li>
             </section>
         </section>
