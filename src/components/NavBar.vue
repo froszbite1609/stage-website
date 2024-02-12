@@ -70,7 +70,7 @@ const toggleDark = useToggle(isDark)
                 <li class="list-none ml-3">
                     <RouterLink to="/profile">
                         <i
-                            class="pi pi-user text-lg text-textSecondary-light dark:text-textSecondary-dark"
+                            class="pi pi-user !leading-normal text-lg text-textSecondary-light dark:text-textSecondary-dark"
                         ></i>
                     </RouterLink>
                 </li>
