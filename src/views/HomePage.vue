@@ -1,5 +1,8 @@
+<script setup lang="ts">
+import SearchBar from '../components/SearchBar.vue'
+</script>
 <template>
-    <main>
-        <h1 class="">Homepage</h1>
+    <main class="grid grid-cols-12 gap-6 px-[250px] pt-24">
+        <SearchBar />
     </main>
 </template>
