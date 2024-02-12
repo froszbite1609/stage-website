@@ -5,30 +5,16 @@ export default {
     theme: {
         extend: {},
         colors: {
+            transparent: 'transparent',
             black: 'hsl(0, 0%, 0%)',
-            white: 'hsl(0, 100%, 100%)',
-            waikawa: {
-                50: 'hsl(210, 37%, 97%)',
-                100: 'hsl(217, 35%, 93%)',
-                200: 'hsl(218, 38%, 87%)',
-                300: 'hsl(216, 38%, 78%)',
-                400: 'hsl(217, 37%, 68%)',
-                500: 'hsl(221, 36%, 60%)',
-                600: 'hsl(226, 32%, 52%)',
-                700: 'hsl(228, 30%, 48%)',
-                800: 'hsl(229, 28%, 40%)',
-                900: 'hsl(229, 25%, 33%)',
-                950: 'hsl(232, 21%, 21%)'
-            },
-            background: {
-                light: 'hsl(0, 100%, 100%)',
-                dark: 'hsl(0, 0%, 10%)'
-            },
-            'background-soft': {
+            white: 'hsl(0, 0%, 100%)',
+            bgLight: 'hsl(0, 100%, 100%)',
+            bgDark: 'hsl(0, 0%, 10%)',
+            bgSoft: {
                 light: 'hsl(0, 0%, 98%)',
                 dark: 'hsl(0, 0%, 14%)'
             },
-            'background-mute': {
+            bgMute: {
                 light: 'hsl(0, 0%, 95%)',
                 dark: 'hsl(0, 0%, 18%)'
             },
@@ -36,11 +22,19 @@ export default {
                 light: 'hsla(0, 0%, 24%, 0.29)',
                 dark: 'hsla(0, 0%, 33%, 0.65)'
             },
-            'divider-light': {
+            dividerLight: {
                 light: 'hsla(0, 0%, 24%, 0.12)',
                 dark: 'hsla(0, 0%, 33%, 0.48)'
             },
-            'modal-background': 'hsla(227, 14%, 46%, 0.8)'
+            modalBG: 'hsla(227, 14%, 46%, 0.8)',
+            textPrimary: {
+                light: 'hsl(208, 37%, 20%)',
+                dark: 'hsla(0, 0%, 100%, 0.87)'
+            },
+            textSecondary: {
+                light: 'hsla(0, 0%, 24%, 0.7)',
+                dark: 'hsla(0, 0%, 92%, 0.6)'
+            }
         }
     },
     plugins: []
