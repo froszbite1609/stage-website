@@ -15,7 +15,7 @@ const toggleDark = useToggle(isDark)
 
 <template>
     <header
-        class="bg-bgLight dark:bg-bgDark w-full fixed top-0 left-0 border-b border-dividerLight-light dark:border-dividerLight-dark h-[56px]"
+        class="bg-bgLight dark:bg-bgDark w-full top-0 left-0 border-b border-dividerLight-light dark:border-dividerLight-dark h-[56px]"
     >
         <section class="w-4/5 h-full mx-auto grid grid-cols-12 items-center">
             <!-- Branding -->
