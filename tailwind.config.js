@@ -34,6 +34,10 @@ export default {
             textSecondary: {
                 light: 'hsla(0, 0%, 24%, 0.7)',
                 dark: 'hsla(0, 0%, 92%, 0.6)'
+            },
+            mainColour: {
+                light: 'hsl(183, 49%, 63%)',
+                dark: 'hsl(183, 49%, 37%)'
             }
         }
     },

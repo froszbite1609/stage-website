@@ -40,7 +40,8 @@ const toggleDark = useToggle(isDark)
                     <RouterLink
                         to="/notifications"
                         class="text-textPrimary-light dark:text-textPrimary-dark text-xs"
-                        >Notifications</RouterLink
+                    >
+                        Notifications</RouterLink
                     >
                 </li>
 
@@ -48,7 +49,7 @@ const toggleDark = useToggle(isDark)
                 <i class="h-6 w-px ml-3 bg-dividerLight-light dark:bg-dividerLight-dark"></i>
 
                 <!-- Toggle menu -->
-                <li class="list-none ml-3">
+                <li class="list-none ml-3 inline-flex items-center">
                     <section
                         class="relative w-[40px] h-[22px] bg-bgMute-light dark:bg-bgMute-dark border rounded-[11px] border-dividerLight-light dark:border-dividerLight-dark cursor-pointer"
                         @click="toggleDark()"
@@ -68,11 +69,18 @@ const toggleDark = useToggle(isDark)
 
                 <!-- User button -->
                 <li class="list-none ml-3">
-                    <RouterLink to="/profile">
+                    <RouterLink to="/saves">
                         <i
                             class="pi pi-user !leading-normal text-lg text-textSecondary-light dark:text-textSecondary-dark"
                         ></i>
                     </RouterLink>
+                </li>
+
+                <!-- Search button -->
+                <li class="list-none ml-3">
+                    <i
+                        class="pi pi-search !leading-normal text-lg text-textSecondary-light dark:text-textSecondary-dark"
+                    ></i>
                 </li>
             </section>
         </section>
