@@ -42,10 +42,6 @@ import AlternativeLayout from '@/layouts/AlternativeLayout.vue'
                 <button
                     type="submit"
                     class="p-4 border rounded bg-bgMute-light dark:bg-bgMute-dark border-dividerLight-light dark:border-dividerLight-dark text-textSecondary-light dark:text-textSecondary-dark"
-                />
-                <!--button-->
-                <button
-                    class="w-full p-[10px] mt-[26px] border-[1px] rounded bg-[#F1F1F1] dark:bg-[#2F2F2F] border-[#3C3C3C1F] dark:border-[#5454547A] text-[#3C3C3CB2] dark:text-[#EBEBEB99] hover:bg-dividerLight-light"
                 >
                     Sign up to Stage
                 </button>
