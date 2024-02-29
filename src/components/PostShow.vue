@@ -56,8 +56,8 @@ defineProps({
         default: ''
     },
     studentId: {
-        type: Number,
-        default: 66025010
+        type: String,
+        default: '66025010'
     },
     title: {
         type: String,

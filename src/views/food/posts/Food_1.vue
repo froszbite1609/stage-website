@@ -17,7 +17,7 @@ import PersonalComment from '@/components/PersonalComment.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Food
                     </span>
-                    • Posted by Weroniczka/@66025010 12d
+                    • Posted by Wimonsiri/@66022905 12d
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
@@ -50,9 +50,10 @@ import PersonalComment from '@/components/PersonalComment.vue'
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
                 <PersonalComment
+                    name="Naphat"
                     content="เมนูง่ายๆ แต่ถ้ามีเทคนิคดีๆ ประกอบด้วย จะทั้งอร่อยทั้งฟินยิ่งกว่าเก่า"
                 />
-                <PersonalComment content="ขอบคุณที่แบ่งปันสูตรอาหารครับ" />
+                <PersonalComment name="Phonsinee" content="ขอบคุณที่แบ่งปันสูตรอาหารครับ" />
             </section>
         </article>
     </MainLayout>

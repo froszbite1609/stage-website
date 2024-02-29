@@ -8,6 +8,8 @@ import PostShow from '@/components/PostShow.vue'
         <VerticalLayout>
             <!-- Studying 1 -->
             <PostShow
+                name="Nutcha"
+                studentId="65453744"
                 src="/studying/studying_1"
                 category="Studying"
                 date="24/2/66"

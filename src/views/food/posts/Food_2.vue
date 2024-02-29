@@ -17,7 +17,7 @@ import PersonalComment from '@/components/PersonalComment.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Food
                     </span>
-                    • Posted by Weroniczka/@66025010 12/3/66
+                    • Posted by Wimonsiri/@66022905 12/3/66
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
@@ -50,6 +50,7 @@ import PersonalComment from '@/components/PersonalComment.vue'
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
                 <PersonalComment
+                    name="Kenosha"
                     content="ข้าวสวย หุงพร้อมไข่ต้มหรือข้าวง่ายๆอย่างเช่น ข้าวเปล่ากับไข่ดาว ไข่เจียวก็ได้ครับ"
                 />
             </section>

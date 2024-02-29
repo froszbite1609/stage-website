@@ -17,7 +17,7 @@ import PersonalComment from '@/components/PersonalComment.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Lifestyle
                     </span>
-                    • Posted by Weroniczka/@66025010 7d
+                    • Posted by Pimphorn/@66099999 7d
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
@@ -50,15 +50,19 @@ import PersonalComment from '@/components/PersonalComment.vue'
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
                 <PersonalComment
+                    name="Rattana"
                     content="ส่วนมากเราอ่านที่คนแนะนำในพันทิป และ article ต่างๆค่ะ สนใจเรื่องไหนก็คีย์อันนั้นเอาค่ะ ส่วนตัวเราชอบฟังเรื่อง สังคม วัฒนธรรม จิตวิทยา ปรัชญา ฯลฯ"
                 />
                 <PersonalComment
+                    name="Chonticha"
                     content="ของไทย ที่เราฟังบ่อยๆก็ Omnivore WiTcast และความสุขโดยสังเกต ของต่างประเทศ เราชอบฟัง Philosophy bites / TED Radio hour / Invisiblia พวกนี้ค่ะ ปล. เราเพิ่งทำ Podcast กับเพื่อน ชื่อ PERcast เกี่ยวกับการตั้งคำถามกับสิ่งรอบตัว แต่ละวีคจะคุยเรื่องต่างๆกันไปค่ะ"
                 />
                 <PersonalComment
+                    name="Wachakorn"
                     content="แนะนำให้ลองฟัง podcast ของ 'The Standard' ปกติแล้วเราเป็นคนชอบอ่านหนังสือ เพราะรู้สึกว่าการได้เห็นตัวหนังสือจะทำให้เราจดจำเรื่องราวนั้นๆได้ดี แต่พอลองได้เริ่มฟังแล้ว กลับรู้สึกชอบ และรู้สึกชอบ และรู้สึกว่าระหว่างกันฟังก็ทำให้เราได้คิดไปด้วยเช่นกัน ทุกวันนี้ เราฟังหลากหลายมาก ทั้งของ 'The Standard' อย่างเดียวก็มีเยอะมาก"
                 />
                 <PersonalComment
+                    name="Ratchanon"
                     content="ส่วนตัวผมจะหาประเด็นที่สนใจก่อนครับ เพราะรายการ podcast มีครอบจักรวาลมาก ส่วนแอปที่ผมใช้ฟัง podcast ก็คงเป็น Spotify ครับ"
                 />
             </section>

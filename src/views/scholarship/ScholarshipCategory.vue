@@ -8,6 +8,8 @@ import PostShow from '@/components/PostShow.vue'
         <VerticalLayout>
             <!-- Scholarship 2 -->
             <PostShow
+                name="Naphat"
+                studentId="66468925"
                 src="/scholarship/scholarship_2"
                 category="Scholarship"
                 date="1d"
@@ -17,6 +19,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Scholarship 1 -->
             <PostShow
+                name="Wimonsiri"
+                studentId="66022905"
                 src="/scholarship/scholarship_1"
                 category="Scholarship"
                 date="2 weeks"

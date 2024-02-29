@@ -17,7 +17,7 @@ import PersonalComment from '@/components/PersonalComment.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Studying
                     </span>
-                    • Posted by Weroniczka/@66025010 24/3/66
+                    • Posted by Nutcha/@65453744 24/3/66
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
@@ -50,15 +50,19 @@ import PersonalComment from '@/components/PersonalComment.vue'
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
                 <PersonalComment
+                    name="Phonnutcha"
                     content="แนะนำในฐานะพี่ที่จบแล้วนะคะ น้องไม่ต้องกดดันตัวเองยิ่งกดดันร่างกายจะยิ่งล้า พยายามตั้งใจฟัง จดเวลาอาจารย์สั่งงานเอาให้ละเอียดเลยค่ะกันลืมค่ะ พักผ่อนเยอะๆกินข้าวเช้าดื่มน้ำเยอะๆพกยาพาราไปด้วยเวลาปวดหัว(ไม่รู้ว่าที่ปวดหัวเพราะอะไรแต่ส่วนนึงถ้าดูแลตัวเองหนูจะสู้ไหว) เรื่องงานก็ถามเพื่อนที่เรียนคลาสเดียวกันกับเราไม่จำเป็นต้องสนิท ต้องใจกล้าเข้าไว้ สู้ๆนะหนู"
                 />
                 <PersonalComment
+                    name="Siriwimon"
                     content="หากขี้ลืม หรือ ตอนอยู่ในห้องเรียนไม่ค่อยมีสมาธิ ลองอัดเสียงอาจารย์หรือพยายามจดควบคู่ไปด้วยดูงับ เราก็เป็นคนขี้ลืม ไม่ค่อยมีสมาธิตอนอยู่กับคนหมู่มาก  ค่อย ๆ ฝึกตัวเองไปทีละนิดนะงับ"
                 />
                 <PersonalComment
+                    name="Kunpriya"
                     content="ที่หน้า ม. มีที่ศึกษาธรรมะ ไปไหว้พระโพธิสัตว์กวนอิม บางทีธรรมะอาจทำให้เราจิตสงบมองเห็นอะไรได้กว้างขึ้น เป็นกำลังให้นะคะ"
                 />
                 <PersonalComment
+                    name="Sakda"
                     content="ลองนั่งห่างจากเพื่อน 1 โต๊ะครับ แรกๆเราก็เป็น พยายามตั้งใจฟังเวลาอาจารย์สอน สงสัยก็ถาม ตอนอ่านหนังสือสอบเราจะไม่ต้องอ่านเยอะครับ ถ้านั่งนานๆแล้วเริ่มเหม่อแนะนำให้พกลูกอมหรือขนมหรืออะไรเปรี้ยวๆไว้กินดูครับ"
                 />
             </section>

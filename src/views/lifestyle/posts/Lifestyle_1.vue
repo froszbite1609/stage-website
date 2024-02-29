@@ -16,7 +16,7 @@ import SortComp from '@/components/SortComp.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Lifestyle
                     </span>
-                    • Posted by Weroniczka/@66025010 20/1/66
+                    • Posted by Yupin/@66095959 20/1/66
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">

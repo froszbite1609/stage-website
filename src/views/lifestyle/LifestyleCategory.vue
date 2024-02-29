@@ -8,6 +8,8 @@ import PostShow from '@/components/PostShow.vue'
         <VerticalLayout>
             <!-- Lifestyle 3 -->
             <PostShow
+                name="Pimphorn"
+                studentId="66099999"
                 src="/lifestyle/lifestyle_3"
                 category="Lifestyle"
                 date="7d"
@@ -17,6 +19,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Lifestyle 2 -->
             <PostShow
+                name="Panisara"
+                studentId="66091118"
                 src="/lifestyle/lifestyle_2"
                 category="Lifestyle"
                 date="12d"
@@ -26,6 +30,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Lifestyle 1 -->
             <PostShow
+                name="Yupin"
+                studentId="66095959"
                 src="/lifestyle/lifestyle_1"
                 category="Lifestyle"
                 date="20/1/66"

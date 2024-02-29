@@ -16,7 +16,7 @@ import SortComp from '@/components/SortComp.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Scholarship
                     </span>
-                    • Posted by Weroniczka/@66025010 2 weeks
+                    • Posted by Wimonsiri/@66022905 2 weeks
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">

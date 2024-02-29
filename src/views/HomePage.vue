@@ -11,6 +11,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Food 1 -->
             <PostShow
+                name="Wimonsiri"
+                studentId="66022905"
                 src="/food/food_1"
                 category="Food"
                 date="12d"
@@ -21,6 +23,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Lifestyle 2 -->
             <PostShow
+                name="Panisara"
+                studentId="66091118"
                 src="/lifestyle/lifestyle_2"
                 category="Lifestyle"
                 date="12d"
@@ -30,6 +34,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Scholarship 2 -->
             <PostShow
+                name="Naphat"
+                studentId="66468925"
                 src="/scholarship/scholarship_2"
                 category="Scholarship"
                 date="1d"
@@ -39,6 +45,8 @@ import PostShow from '@/components/PostShow.vue'
 
             <!-- Studying 1 -->
             <PostShow
+                name="Nutcha"
+                studentId="65453744"
                 src="/studying/studying_1"
                 category="Studying"
                 date="24/2/66"

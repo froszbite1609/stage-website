@@ -17,7 +17,7 @@ import PersonalComment from '@/components/PersonalComment.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Scholarship
                     </span>
-                    • Posted by Weroniczka/@66025010 7d
+                    • Posted by Naphat/@66468925 7d
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
@@ -50,11 +50,16 @@ import PersonalComment from '@/components/PersonalComment.vue'
 
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
-                <PersonalComment content="ต้องยื่นเรื่องกับกองทุนการศึกษาของมหาลัยครับ" />
                 <PersonalComment
+                    name="Phanupong"
+                    content="ต้องยื่นเรื่องกับกองทุนการศึกษาของมหาลัยครับ"
+                />
+                <PersonalComment
+                    name="Preapilai"
                     content="เอกสารให้ติดตามที่เพจของมหาลัยได้เลยค่ะ แล้วปีหน้าก็ขอยื่นใหม่"
                 />
                 <PersonalComment
+                    name="Nannicha"
                     content="เค้าเคยย้ายสาขาต้องเริ่มทำเรื่องใหม่หมดเลยค่ะ แนะนำให้โทรหา กยศ. ของมหาลัยเพื่อความแน่ใจเลยค่ะ"
                 />
             </section>
