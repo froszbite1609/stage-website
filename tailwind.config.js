@@ -26,7 +26,7 @@ export default {
                 light: 'hsla(0, 0%, 24%, 0.12)',
                 dark: 'hsla(0, 0%, 33%, 0.48)'
             },
-            modalBG: 'hsla(227, 14%, 46%, 0.8)',
+            modalBg: 'hsla(227, 14%, 46%, 0.8)',
             textPrimary: {
                 light: 'hsl(208, 37%, 20%)',
                 dark: 'hsla(0, 0%, 100%, 0.87)'

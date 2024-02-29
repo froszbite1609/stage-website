@@ -17,17 +17,17 @@ import PersonalComment from '@/components/PersonalComment.vue'
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
                         Food
                     </span>
-                    • Posted by Weroniczka/@66025010 12d
+                    • Posted by Weroniczka/@66025010 12/3/66
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
-                    เทคนิคการทอดไข่เจียวให้ฟู ฟูแบบเต็มกระทะ
+                    มีเมนูเด็กหอที่ไม่แพง แถมทำง่ายๆไม่ยุ่งยากแนะนำไหมครับ
                 </h1>
             </section>
 
             <!-- Image -->
             <section>
-                <img :src="post.image" class="max-h-80 w-full object-cover" />
+                <img v-if="image" :src="image" class="max-h-80 w-full object-cover" />
             </section>
 
             <!-- Body -->
@@ -50,9 +50,8 @@ import PersonalComment from '@/components/PersonalComment.vue'
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
                 <PersonalComment
-                    content="เมนูง่ายๆ แต่ถ้ามีเทคนิคดีๆ ประกอบด้วย จะทั้งอร่อยทั้งฟินยิ่งกว่าเก่า"
+                    content="ข้าวสวย หุงพร้อมไข่ต้มหรือข้าวง่ายๆอย่างเช่น ข้าวเปล่ากับไข่ดาว ไข่เจียวก็ได้ครับ"
                 />
-                <PersonalComment content="ขอบคุณที่แบ่งปันสูตรอาหารครับ" />
             </section>
         </article>
     </MainLayout>
@@ -62,16 +61,7 @@ export default {
     data() {
         return {
             post: {
-                content: `สวัสดีครับ วันนี้ผมจะมาแชร์วิธีการทอดไข่เจียวให้ฟู ฟูแบบเต็มกระทะ ด้วยวิธีแบบง่ายๆของผม มาลองดูกันนะครับว่าต้องทำยังไงบ้าง ผมจะใช้
-
-            - ไข่ไก่ 2 ฟอง
-            - น้ำปลา
-            - น้ำมันพืช ประมาณ 150ml
-            - นำไข่ตอกใส่ชาม ใส่น้ำปลา และคนให้เข้ากัน
-            - ตั้งกระทะใส่น้ำมันพืช รอให้ร้อน
-            - ใส่ไข่ที่ตอกใส่กระทะ แล้วใช้ทัพพีพลิกไข่ให้สุกทั่วทั้งสองด้าน
-            - ตักขึ้นใส่จาน พร้อมเสิร์ฟ`,
-                image: '/src/assets/images/food_1.png'
+                content: `ตามนั้นเลยครับ เพิ่งย้ายมาอยู่หอตอนนี้ต้องประหยัดเงินพอสมควรเลยครับ ไม่อยากใช้เยอะแค่ค่าหอก็แพงโคตรละครับ จะให้ซื้อกินทุกวันคงไม่ไหว ค่าของกินเลยต้องลดๆลงมาหน่อย อุปกรณ์ที่มีก็จะเป็น กระทะไฟฟ้า หม้อต้มเล็กๆครับ ส่วนแหล่งที่ซื้อของ เช่น ตลาด แถวนี้ไม่มีเลยครับ ใครพอจะมีเมนูแนะนำบ้างครับ หาซื้อในเซเว่นก็ได้ครับ`
             }
         }
     },

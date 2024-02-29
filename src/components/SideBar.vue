@@ -16,10 +16,10 @@ import CategoryLink from './CategoryLink.vue'
 
             <!-- Post 1  -->
             <RecentPost
-                image="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                title="Food 1"
-                point="3"
-                comment="3"
+                image="/src/assets/images/food_1.png"
+                title="เทคนิคการทำไข่เจียวให้ฟู ฟูแบบเต็มกระทะ"
+                point="2"
+                comment="2"
                 date="12d"
                 src="/food/food_1"
             />
@@ -28,10 +28,9 @@ import CategoryLink from './CategoryLink.vue'
 
             <!-- Post 2 -->
             <RecentPost
-                image="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                title="Food 2"
+                title="มีเมนูเด็กหอที่ไม่แพง แถมทำง่ายๆไม่ยุ่งยากแนะนำไหมครับ"
                 point="5"
-                comment="2"
+                comment="1"
                 date="12/3/66"
                 src="/food/food_2"
             />
@@ -40,10 +39,9 @@ import CategoryLink from './CategoryLink.vue'
 
             <!-- Post 3 -->
             <RecentPost
-                image="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                title="Lifestyle 3"
+                title="ถามคนชอบฟัง podcast ค่ะ ว่าชอบฟังอะไร รู้จักได้ยังไง รู้จากไหน"
                 point="1"
-                comment="3"
+                comment="4"
                 date="7d"
                 src="/lifestyle/lifestyle_3"
             />
@@ -52,8 +50,7 @@ import CategoryLink from './CategoryLink.vue'
 
             <!-- Post 4 -->
             <RecentPost
-                image="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                title="Scholarship 2"
+                title="ตอนนี้เราเรียนอยู่คณะสาขาหนึ่งค่ะ แต่เรารู้สึกว่ามันไม่ใช่ทางเรา เราเคยคิดที่จะย้ายค่ะ คือเราอยากรู้เรื่องว่าเรื่อง กยศ. ต้องย้ายยังไงหรอคะ"
                 point="2"
                 comment="3"
                 date="1d"
@@ -64,10 +61,9 @@ import CategoryLink from './CategoryLink.vue'
 
             <!-- Post 5 -->
             <RecentPost
-                image="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                title="Lifestyle 1"
+                title="มีเรื่องราวดีๆของคนดีๆมาแบ่งปัน"
                 point="7"
-                comment="4"
+                comment="0"
                 date="20/1/66"
                 src="/lifestyle/lifestyle_1"
             />

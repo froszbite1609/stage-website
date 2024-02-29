@@ -15,25 +15,26 @@ import NotificationAlert from '@/components/NotificationAlert.vue'
             <!-- Content  -->
             <section class="flex flex-col gap-4">
                 <NotificationAlert
-                    heading="New post"
-                    description="A new post has been added to the platform."
+                    heading="Aing replied to your comment"
+                    description="Aing replied to your comment on the post."
                 />
 
                 <i class="w-full h-px bg-dividerLight-light dark:bg-dividerLight-dark"></i>
 
                 <NotificationAlert
-                    heading="New comment"
-                    description="A new comment has been added to your post."
+                    heading="FeeFa upvoted your post"
+                    description="FeeFa upvoted your post."
                 />
                 <i class="w-full h-px bg-dividerLight-light dark:bg-dividerLight-dark"></i>
 
-                <NotificationAlert heading="New follower" description="You have a new follower." />
+                <NotificationAlert heading="Your comment was deleted by owner" description="" />
 
                 <i class="w-full h-px bg-dividerLight-light dark:bg-dividerLight-dark"></i>
 
-                <NotificationAlert heading="New like" description="Your post has been liked." />
-
-                <i class="w-full h-px bg-dividerLight-light dark:bg-dividerLight-dark"></i>
+                <NotificationAlert
+                    heading="Your comment was responded by Aranchai"
+                    description=""
+                />
             </section>
         </section>
     </SecondLayout>

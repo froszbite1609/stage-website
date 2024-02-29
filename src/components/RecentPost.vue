@@ -1,12 +1,12 @@
 <template>
-    <RouterLink :to="src" class="flex gap-[7px]">
+    <RouterLink :to="src" class="flex flex-row gap-[7px]">
         <!-- Image -->
-        <section>
-            <img class="h-[44px] w-[51px]" :src="image" />
+        <section v-if="image" class="w-1/3">
+            <img :src="image" />
         </section>
 
         <!-- Content -->
-        <section class="">
+        <section class="w-full">
             <h1 class="text-base font-bold text-textPrimary-light dark:text-textPrimary-dark">
                 {{ title }}
             </h1>

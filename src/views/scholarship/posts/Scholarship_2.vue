@@ -15,19 +15,20 @@ import PersonalComment from '@/components/PersonalComment.vue'
                 <p class="text-xs text-textSecondary-light dark:text-textSecondary-dark">
                     <!-- Category -->
                     <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">
-                        Food
+                        Scholarship
                     </span>
-                    • Posted by Weroniczka/@66025010 12d
+                    • Posted by Weroniczka/@66025010 7d
                 </p>
                 <!-- Title -->
                 <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
-                    เทคนิคการทอดไข่เจียวให้ฟู ฟูแบบเต็มกระทะ
+                    ตอนนี้เราเรียนอยู่คณะสาขาหนึ่งค่ะ แต่เรารู้สึกว่ามันไม่ใช่ทางเรา
+                    เราเคยคิดที่จะย้ายค่ะ คือเราอยากรู้เรื่องว่าเรื่อง กยศ. ต้องย้ายยังไงหรอคะ
                 </h1>
             </section>
 
             <!-- Image -->
             <section>
-                <img :src="post.image" class="max-h-80 w-full object-cover" />
+                <img v-if="image" :src="image" class="max-h-80 w-full object-cover" />
             </section>
 
             <!-- Body -->
@@ -49,10 +50,13 @@ import PersonalComment from '@/components/PersonalComment.vue'
 
             <!-- Comment(s)  -->
             <section class="flex flex-col gap-4">
+                <PersonalComment content="ต้องยื่นเรื่องกับกองทุนการศึกษาของมหาลัยครับ" />
                 <PersonalComment
-                    content="เมนูง่ายๆ แต่ถ้ามีเทคนิคดีๆ ประกอบด้วย จะทั้งอร่อยทั้งฟินยิ่งกว่าเก่า"
+                    content="เอกสารให้ติดตามที่เพจของมหาลัยได้เลยค่ะ แล้วปีหน้าก็ขอยื่นใหม่"
                 />
-                <PersonalComment content="ขอบคุณที่แบ่งปันสูตรอาหารครับ" />
+                <PersonalComment
+                    content="เค้าเคยย้ายสาขาต้องเริ่มทำเรื่องใหม่หมดเลยค่ะ แนะนำให้โทรหา กยศ. ของมหาลัยเพื่อความแน่ใจเลยค่ะ"
+                />
             </section>
         </article>
     </MainLayout>
@@ -62,16 +66,7 @@ export default {
     data() {
         return {
             post: {
-                content: `สวัสดีครับ วันนี้ผมจะมาแชร์วิธีการทอดไข่เจียวให้ฟู ฟูแบบเต็มกระทะ ด้วยวิธีแบบง่ายๆของผม มาลองดูกันนะครับว่าต้องทำยังไงบ้าง ผมจะใช้
-
-            - ไข่ไก่ 2 ฟอง
-            - น้ำปลา
-            - น้ำมันพืช ประมาณ 150ml
-            - นำไข่ตอกใส่ชาม ใส่น้ำปลา และคนให้เข้ากัน
-            - ตั้งกระทะใส่น้ำมันพืช รอให้ร้อน
-            - ใส่ไข่ที่ตอกใส่กระทะ แล้วใช้ทัพพีพลิกไข่ให้สุกทั่วทั้งสองด้าน
-            - ตักขึ้นใส่จาน พร้อมเสิร์ฟ`,
-                image: '/src/assets/images/food_1.png'
+                content: `ต้องเตรียมเอกสารอะไรยังไงหรอคะ พอดีเราทักไปถามทางเพจแล้วค่ะแต่เขายังไม่ตอบ ขอสอบถามผู้รู้หน่อยค่ะ`
             }
         }
     },

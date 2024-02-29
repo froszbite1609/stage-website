@@ -9,30 +9,41 @@ import PostShow from '@/components/PostShow.vue'
         <VerticalLayout>
             <CreatePost />
 
-            <PostShow src="/food/food_1" category="Food" date="7 hours ago" title="Food 1" />
+            <!-- Food 1 -->
+            <PostShow
+                src="/food/food_1"
+                category="Food"
+                date="12d"
+                title="เทคนิคการทอดไข่เจียวให้ฟู ฟูแบบเต็มกระทะ"
+                image="/src/assets/images/food_1.png"
+                content="สวัสดีครับ วันนี้ผมจะมาแชร์วิธีการทอดไข่เจียวให้ฟู ฟูแบบเต็มกระทะ ด้วยวิธีแบบง่ายๆของผม มาลองดูกันนะครับว่าต้องทำยังไงบ้าง ผมจะใช้..."
+            />
 
+            <!-- Lifestyle 2 -->
             <PostShow
                 src="/lifestyle/lifestyle_2"
                 category="Lifestyle"
-                date="7 hours ago"
-                title="Lifestyle 2"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis nisl rhoncus mattis rhoncus urna neque. Leo urna molestie at elementum eu. In ante metus dictum at tempor commodo ullamcorper. Risus ultricies tristique nulla aliquet. Consequat mauris nunc congue nisi vitae. Purus semper eget duis at tellus at urna condimentum mattis. At augue eget arcu dictum varius duis at consectetur lorem. Dui sapien eget mi proin sed libero enim sed. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Aliquam etiam erat velit scelerisque."
+                date="12d"
+                title="คนที่เรียนไปด้วย ทำงานไปด้วย ทำยังไงให้เอาชีวิตรอดได้จนจบคะ ถ้าไม่มีใคร support เลย"
+                content="ถ้ามีเงื่อนไขในชีวิตว่า แม่ทำงานได้วันละไม่ถึง 200 บาท น้องไม่ได้ทำงาน ไม่มีญาติช่วยเหลือ ตัวเองต้องทำงานหาเงินเพื่อที่จะมีให้ตัวเองได้กินข้าว ซื้อของอุปโภคบริโภคภายในครอบครัว ไหนจะค่าเรียนอีก จ่ายค่าเทอมเองทุกบาท ค่ารถไปบางทีเราก็ไม่ได้ไปสอบเพราะวันนั้นไม่มีค่ารถไป แล้วต้องขาดงานทำให้เสียรายได้อีก แค่สามร้อยกว่าบาทก็ทำให้ชีวิตมีกินมีใช้หลายวันแล้ว ลาสามวัน..."
             />
 
+            <!-- Scholarship 2 -->
             <PostShow
                 src="/scholarship/scholarship_2"
                 category="Scholarship"
                 date="1d"
-                title="Scholarship 2"
-                content=""
+                title="ตอนนี้เราเรียนอยู่คณะสาขาหนึ่งค่ะ แต่เรารู้สึกว่ามันไม่ใช่ทางเรา เราเคยคิดที่จะย้ายค่ะ คือเราอยากรู้ว่าเรื่อง กยศ. ต้องย้ายยังไงหรอคะ"
+                content="ต้องเตรียมเอกสารอะไรยังไงหรอคะ พอดีเราทักไปถามทางเพจแล้วค่ะแต่เขายังไม่ตอบ ขอสอบถามผู้รู้หน่อยค่ะ"
             />
 
+            <!-- Studying 1 -->
             <PostShow
                 src="/studying/studying_1"
                 category="Studying"
-                date="30/02/65"
-                title="Studying 1"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis nisl rhoncus mattis rhoncus urna neque. Leo urna molestie at elementum eu. In ante metus dictum at tempor commodo ullamcorper. Risus ultricies tristique nulla aliquet. Consequat mauris nunc congue nisi vitae. Purus semper eget duis at tellus at urna condimentum mattis."
+                date="24/2/66"
+                title="ปรึกษาหน่อยค่ะ"
+                content="เรารู้สึกเหนื่อยมากๆ เรื่องเรียน เรียนเทอมนี้ก็ F ไปแล้ว 2 ตัว เวลาเรียนปวดหัวตลอด สมองทำงานช้า อึนๆมึนๆ..."
             />
         </VerticalLayout>
     </MainLayout>

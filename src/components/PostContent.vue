@@ -1,55 +1,89 @@
 <script setup lang="ts">
 import SortComp from '@/components/SortComp.vue'
+import CreateComment from '@/components/CreateComment.vue'
+import PersonalComment from '@/components/PersonalComment.vue'
 </script>
 <template>
     <article
-        class="col-span-9 bg-bgSoft-light dark:bg-bgSoft-dark border rounded border-divider-ligth dark:border-divider-dark p-4 flex flex-col gap-4"
-        v-if="post"
+        class="flex flex-col basis-9/12 gap-4 p-4 bg-bgSoft-light dark:bg-bgSoft-dark border rounded border-divider-light dark:border-divider-dark"
     >
         <!-- Header -->
         <section>
             <p class="text-textSecondary-light dark:text-textSecondary-dark">
                 <!-- Category -->
                 <span class="text-textPrimary-light dark:text-textPrimary-dark font-bold">{{
-                    post.category
+                    category
                 }}</span>
-                • Posted by {{ post.posted_by }} {{ post.date }}
+                • Posted by {{ name }}/@{{ studentId }} {{ date }}
             </p>
             <!-- Title -->
             <h1 class="text-2xl font-bold text-textPrimary-ligth dark:text-textPrimary-dark">
-                {{ post.title }}
+                {{ title }}
             </h1>
         </section>
 
         <!-- Image -->
         <section>
-            <img
-                src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="max-h-xs"
-            />
+            <img :src="image" class="max-h-80 w-full object-cover" />
         </section>
 
         <!-- Body -->
         <section>
-            <p class="text-textSecondary-light dark:text-textSecondary-dark">
-                {{ post.content }}
-            </p>
+            <p
+                v-html="replaceBrTags"
+                class="text-textSecondary-light dark:text-textSecondary-dark"
+            ></p>
         </section>
 
+        <!-- Create comment -->
+        <CreateComment />
+
+        <!-- Sorting comment -->
         <SortComp />
+
+        <!-- Comment(s)  -->
+        <section class="flex flex-col gap-4">
+            <PersonalComment />
+            <PersonalComment />
+            <PersonalComment />
+        </section>
     </article>
 </template>
 <script lang="ts">
 export default {
-    data() {
-        return {
-            post: null
+    props: {
+        category: {
+            type: String,
+            default: ''
+        },
+        name: {
+            type: String,
+            default: 'Aranchai Moonkum'
+        },
+        date: {
+            type: String,
+            default: ''
+        },
+        studentId: {
+            type: Number,
+            default: 66025010
+        },
+        title: {
+            type: String,
+            default: ''
+        },
+        content: {
+            type: String,
+            default: ''
+        },
+        image: {
+            type: String,
+            default: ''
         }
     },
-    created() {
-        const storedPost = localStorage.getItem('post')
-        if (storedPost) {
-            this.post = JSON.parse(storedPost)
+    computed: {
+        replaceBrTags() {
+            return this.content.replace(/\r?\n/g, '<br />')
         }
     }
 }

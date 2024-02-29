@@ -10,10 +10,11 @@
         </section>
 
         <!-- Button to show modal -->
-        <button
+        <RouterLink
+            to="/post-creating"
             class="block w-full px-4 py-3 bg-bgMute-light dark:bg-bgMute-dark border rounded border-dividerLight-light dark:border-dividerLight-dark text-textSecondary-light dark:text-textSecondary-dark text-left"
         >
             Create Post
-        </button>
+        </RouterLink>
     </section>
 </template>

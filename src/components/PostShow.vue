@@ -1,3 +1,6 @@
+<script lang="ts">
+import PostMenu from './PostMenu.vue'
+</script>
 <template>
     <RouterLink
         :to="src"
@@ -29,6 +32,9 @@
                 {{ content }}
             </p>
         </section>
+
+        <!-- Post menu -->
+        <PostMenu />
     </RouterLink>
 </template>
 <script setup lang="ts">

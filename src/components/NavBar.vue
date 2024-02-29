@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core'
 import 'primeicons/primeicons.css' // Use SVG icons.
+import SearchModal from '@/components/SearchModal.vue'
 
 const isDark = useDark({
     selector: 'body',
@@ -14,8 +15,9 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
+    <SearchModal v-show="isModalOpen" @closeModal="close" />
     <header
-        class="fixed bg-bgLight dark:bg-bgDark w-full top-0 left-0 border-b border-dividerLight-light dark:border-dividerLight-dark h-[56px]"
+        class="z-10 fixed bg-bgLight dark:bg-bgDark w-full top-0 left-0 border-b border-dividerLight-light dark:border-dividerLight-dark h-[56px]"
     >
         <section class="w-4/5 h-full mx-auto grid grid-cols-12 items-center">
             <!-- Branding -->
@@ -79,10 +81,28 @@ const toggleDark = useToggle(isDark)
                 <!-- Search button -->
                 <li class="list-none ml-3">
                     <i
-                        class="pi pi-search !leading-normal text-lg text-textSecondary-light dark:text-textSecondary-dark"
+                        class="pi pi-search cursor-pointer !leading-normal text-lg text-textSecondary-light dark:text-textSecondary-dark"
+                        @click="showModal"
                     ></i>
                 </li>
             </section>
         </section>
     </header>
 </template>
+<script lang="ts">
+export default {
+    data() {
+        return {
+            isModalOpen: false
+        }
+    },
+    methods: {
+        showModal() {
+            this.isModalOpen = true
+        },
+        close() {
+            this.isModalOpen = false
+        }
+    }
+}
+</script>
