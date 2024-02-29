@@ -1,12 +1,22 @@
 <template>
     <section class="flex flex-row gap-4">
         <button
-            class="text-textSecondary-light dark:text-textSecondary-dark cursor-pointer text-lg hover:text-mainColour-light dark:hover:text-mainColour-dark"
+            class="cursor-pointer text-lg hover:text-mainColour-light dark:hover:text-mainColour-dark"
+            v-bind:class="{
+                'text-textSecondary-light dark:text-textSecondary-dark': !upvoted,
+                'text-mainColour-light dark:text-mainColour-dark': upvoted
+            }"
+            v-on:click="upvoted = !upvoted"
         >
             <i class="pi pi-arrow-up"></i>
         </button>
         <button
-            class="text-textSecondary-light dark:text-textSecondary-dark cursor-pointer text-lg hover:text-mainColour-light dark:hover:text-mainColour-dark"
+            class="cursor-pointer text-lg hover:text-mainColour-light dark:hover:text-mainColour-dark"
+            v-bind:class="{
+                'text-textSecondary-light dark:text-textSecondary-dark': !downvoted,
+                'text-mainColour-light dark:text-mainColour-dark': downvoted
+            }"
+            v-on:click="downvoted = !downvoted"
         >
             <i class="pi pi-arrow-down"></i>
         </button>
@@ -30,3 +40,13 @@
         </button>
     </section>
 </template>
+<script lang="ts">
+export default {
+    data() {
+        return {
+            upvoted: false,
+            downvoted: false
+        }
+    }
+}
+</script>
