@@ -38,6 +38,14 @@ export default {
             mainColour: {
                 light: 'hsl(183, 49%, 63%)',
                 dark: 'hsl(183, 49%, 37%)'
+            },
+            danger: {
+                light: 'hsl(0, 91%, 71%)',
+                dark: 'hsl(0, 84%, 60%)'
+            },
+            success: {
+                light: 'hsl(158, 64%, 52%)',
+                dark: 'hsl(160, 84%, 39%)'
             }
         }
     },
