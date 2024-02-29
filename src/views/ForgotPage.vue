@@ -8,7 +8,7 @@ import AlternativeLayout from '@/layouts/AlternativeLayout.vue'
             <h1
                 class="text-[32px] font-bold mt-10 text-textPrimary-light dark:text-textPrimary-dark"
             >
-                Create account
+                Forgot password?
             </h1>
             <p class="text-textSecondary-light dark:text-textSecondary-dark">
                 Don’t worry, we will send you a reset link
